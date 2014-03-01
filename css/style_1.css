@@ -1,0 +1,229 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/robbie_2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: nav_font;
+  src: url('palovsky.ttf');
+}
+
+@font-face {
+  font-family: header_font;
+  src: url('GeosansLight.ttf');
+}
+
+@font-face {
+  font-family: header_special;
+  src: url('GeosansLight-Oblique.ttf');
+}
+
+/*.bg { //old background
+  background: url(/robbie_1.jpg) no-repeat;
+  position: fixed;
+  background-size: 100%;
+  width: 120%;
+  height: 220%;
+  top:0;
+  left:0;
+  z-index: -1;
+}*/
+
+/*___________________________________*/
+
+.header {
+  position: absolute;
+  float: left;
+  top: 0px;
+  left: 0px;
+  width: 470px;
+  height: 175px;
+
+  font-family: nav_font;
+  font-size: 175px;
+  line-height: 70%;
+
+  /*background-color: rgba(30, 30, 30, 0.6);*/
+}
+
+.header ul {
+  cursor: default;
+  top: auto;
+  bottom: auto;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+.nav {
+  position: absolute;
+  top: 175px;
+  left: 0px;
+  width: 470px;
+  height: 560px;
+
+  font-family: nav_font;
+  font-size: 80px;
+  text-align: left;
+
+  /*background-color: rgba(30, 30, 30, 0.6);*/
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color; /* Safari */
+  -webkit-transition-duration: 0.3s; /* Safari */
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.nav .active a {
+  color: white !important;
+}
+
+.nav ul {
+  margin: 0;
+  padding-left: 30px;
+  list-style: none;
+  list-style-image: none;
+}
+
+/*___________________________________*/
+
+.container {
+  position: relative;
+  overflow: scroll;
+  margin-left: 470px;
+  height: 100%;
+  min-height: 735px;
+
+}
+
+.container .ajax {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 700px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+/*___________________________________*/
+
+/*___________ MUSIC _________________*/
+
+div.music {
+  position: relative;
+  overflow: scroll;
+  height: 99.5%;
+  width: 100%;
+  background-color: white;
+  padding-top: 5px;
+}
+
+.music object {
+  overflow: scroll;
+  position: relative;
+  display: block;
+  height: 590px;
+  width: 590px;
+  margin: auto;
+}
+
+.music center {
+  font-family: header_font;
+  font-size: 50px;
+}
+
+.music .release {
+  font-family: header_font;
+  font-size: 22px;
+  color: rgba(30, 30, 30, 0.6);
+}
+
+.music ol {
+  font-family: header_font;
+  float: left;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 35px;
+  padding: 0;
+}
+
+/*_________ SHOWS __________________*/
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color; /* Safari */
+  -webkit-transition-duration: 0.3s; /* Safari */
+}
+
+a:hover {
+  color: rgba(30, 30, 30, 0.6);
+}
+
+.showItem {
+  padding-top:9px;
+  height: 80px;
+  width:100%;
+  border-bottom: 2px solid black;
+}
+
+.showItem .date {
+  border-top: 3px solid black;
+  height: 90%;
+  display: inline-block;
+}
+
+.showItem .date h1 {
+  font-family: header_special;
+  padding: 2px;
+  margin: 0;
+  font-size: 60px;
+}
+                      
+.showItem .venue {
+  padding-left: 10px;
+  font-family: header_font;
+  font-size: 40px;
+}
+
+.showItem .tickets {
+  padding-top: 33px;
+  padding-right: 2px;
+  float: right; 
+  font-family: header_font;
+  font-size: 30px;
+}
+
+
+
+
+
+

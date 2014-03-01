@@ -1,0 +1,31 @@
+<head>
+	<script src='http://www.bandsintown.com/javascripts/bit_widget.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://www.bandsintown.com/javascripts/bit_widget.js"></script>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src ="js/angular.min.js"></script>
+	<script src ="js/angular-animate.min.js"></script>
+	<script src ="js/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<div class="ajax" ngview>
+
+<script type="text/javascript">  
+  $(document).ready(function() { 
+      new BIT.Widget({ 
+        "artist":"Lady Gaga", 
+        "div_id":"tour-dates",
+        "bg_color": "#FFFFFF"
+      }).insert_events();
+  });
+</script>
+<div id="tour-dates"></div>
+
+
+</div>
+
+</div>
